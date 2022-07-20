@@ -3,7 +3,7 @@
     width: 15em;
     height: 100%;
     margin: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 3px;
     border-radius: 25px;
     background-color: #fff;
@@ -16,20 +16,22 @@
     transform: translateY(-5px);
 }
 
-h2, p {
+h2, h3, p {
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+    font-size: 40px;
 }
 
 h2 {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-p {
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px
 }
 
 .price-block p:first-child {
     font-size: 120px;
-    margin: 20px;
-    padding: 10px;
+    margin: 15px;
+    padding: 5px;
+    margin-bottom: -30px;
 }

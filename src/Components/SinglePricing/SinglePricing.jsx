@@ -5,9 +5,9 @@ const SinglePricing = ({ title, price, lesson, code, career, interview, icon }) 
   return (
     <div className="price-block">
       <p>{icon}</p>
-      <h2>{price}</h2>
-      <hr/>
       <h2>{title}</h2>
+      <h3>{price}</h3>
+      <hr/>
       <p>{lesson}</p>
       <p>{code}</p>
       <p>{career}</p>
