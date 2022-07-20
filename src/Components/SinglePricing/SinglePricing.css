@@ -1,0 +1,35 @@
+.price-block {
+    display: inline-block;
+    width: 15em;
+    height: 100%;
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 3px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+.price-block:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.price-block p:first-child {
+    font-size: 120px;
+    margin: 20px;
+    padding: 10px;
+}

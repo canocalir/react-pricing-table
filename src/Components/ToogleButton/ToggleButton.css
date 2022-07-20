@@ -1,0 +1,60 @@
+.centerer {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.switcher {
+  height: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 2px;
+  width: 200px;
+  border-radius: 30px;
+  border: solid 1px #ddd;
+  position: relative;
+}
+
+.switcher__input {
+  display: none;
+}
+
+.switcher__label {
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  position: inherit;
+  z-index: 10;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.switcher__toggle {
+  position: absolute;
+  float: left;
+  height: 30px;
+  width: 50%;
+  font-size: 12px;
+  line-height: 30px;
+  cursor: pointer;
+  background-color: rgb(67, 24, 102);
+  border-radius: 30px;
+  left: 5px;
+  top: 4px;
+  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.switcher__input:checked + .switcher__label {
+  color: #fff;
+}
+
+.switcher__input--annual:checked ~ .switcher__toggle {
+  left: 100px;
+}
