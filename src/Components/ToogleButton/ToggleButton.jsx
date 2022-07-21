@@ -37,7 +37,7 @@ export default function ToggleButton({ setIsAnnual, setPriceTag, isannual }) {
           style={
             isannual
               ? { backgroundColor: "rgb(67, 24, 102)" }
-              : { backgroundColor: "aqua" }
+              : { backgroundColor: "#1899D6" }
           }
         />
       </div>

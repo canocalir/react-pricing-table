@@ -16,10 +16,18 @@ export default function App() {
       style={
         isannual
           ? { backgroundColor: "rgb(67, 24, 102)" }
-          : { backgroundColor: "aqua" }
+          : { backgroundColor: "#1899D6" }
       }
     >
       <h1>React Pricing Table</h1>
+      <br></br>
+     
+      <ToggleButton 
+      setIsAnnual={setIsAnnual} 
+      setPriceTag={setPriceTag}
+      isannual={isannual} />
+      <br></br>
+      <br></br>
 
       <SinglePricing
         icon={<FcAndroidOs />}
@@ -29,6 +37,7 @@ export default function App() {
         code={"Basic IDE"}
         career={"Career Paths"}
         interview={"Mock Interviews"}
+        isannual={isannual}
       />
 
       <SinglePricing
@@ -39,6 +48,7 @@ export default function App() {
         code={"Pro IDE"}
         career={"Career Paths"}
         interview={"Mock Interviews"}
+        isannual={isannual}
       />
 
       <SinglePricing
@@ -49,11 +59,9 @@ export default function App() {
         code={"Pro IDE"}
         career={"Career Guidance"}
         interview={"Mock Interviews"}
+        isannual={isannual}
       />
-      <ToggleButton 
-      setIsAnnual={setIsAnnual} 
-      setPriceTag={setPriceTag}
-      isannual={isannual} />
+      
     </div>
   );
 }

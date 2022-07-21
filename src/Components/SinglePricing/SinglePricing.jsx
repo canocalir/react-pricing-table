@@ -1,7 +1,8 @@
 import React from "react";
+import SubscribeButton from "../SubscribeButton/SubscribeButton";
 import "./SinglePricing.css";
 
-const SinglePricing = ({ title, price, lesson, code, career, interview, icon }) => {
+const SinglePricing = ({ isannual, title, price, lesson, code, career, interview, icon }) => {
   return (
     <div className="price-block">
       <p>{icon}</p>
@@ -12,6 +13,7 @@ const SinglePricing = ({ title, price, lesson, code, career, interview, icon }) 
       <p>{code}</p>
       <p>{career}</p>
       <p>{interview}</p>
+      <SubscribeButton isannual={isannual}/>
     </div>
   );
 };
