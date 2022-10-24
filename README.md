@@ -1,4 +1,4 @@
-# React Dev News App
+# React Pricing Table App
 
 ### Used Tech and Libraries
 * React JS
